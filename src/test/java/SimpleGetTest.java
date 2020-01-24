@@ -21,7 +21,8 @@ public class SimpleGetTest {
 
         // Make a request to the server by specifying the method Type and the method URL.
         // This will return the Response from the server. Store the response in a variable.
-        Response response = httpRequest.request(Method.GET, "/Hyderabad");
+        //Response response = httpRequest.request(Method.GET, "/Hyderabad");
+        Response response=httpRequest.get("/Hyderabad");
         int statusCode= response.getStatusCode();
 
         // Now let us print the body of the message to see what response
